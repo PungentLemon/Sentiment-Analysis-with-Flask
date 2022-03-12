@@ -1,0 +1,34 @@
+{% extends "index.html" %} {% block result %} {% if dp==0 %}
+<p style="font-size: 25px">
+  Above sentence is
+  <b style="text-decoration: underline; ">Negative</b>
+  <img
+    src="/static/images/negative.png"
+    alt="negative"
+    width="100"
+    height="120"
+  />
+</p>
+{% elif dp==1 %}
+<p style="font-size: 25px">
+  Above sentence is
+  <b style="text-decoration: underline;">Neutral</b>
+  <img
+    src="/static/images/neutral.png"
+    alt="negative"
+    width="100"
+    height="120"
+  />
+</p>
+{% else %}
+<p style="font-size: 25px">
+  Above sentence is
+  <b style="text-decoration: underline;">Positive</b>
+  <img
+    src="/static/images/positive.png"
+    alt="negative"
+    width="100"
+    height="120"
+  />
+</p>
+{% endif %} {% endblock %}
